@@ -1,0 +1,30 @@
+
+/* Stats Section */
+.stats-section {
+  background-color: #0e0e0e;
+  padding: 80px 10%;
+  color: #fff;
+}
+
+.stats-section .stat-box {
+  margin-bottom: 30px;
+}
+
+.stats-section .stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffd369;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.stats-section .stat-number:hover {
+  transform: scale(1.1);
+}
+
+.stats-section p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ccc;
+  font-weight: 500;
+}

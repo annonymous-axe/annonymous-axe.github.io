@@ -1,0 +1,150 @@
+/* Reset */
+body, html {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #f5f5f5;
+  background-color: #0e0e0e;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header layout */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 1000;
+  /* background: rgba(0, 0, 0, 0.6); */
+  /* backdrop-filter: blur(8px); */
+  /* border-bottom: 1px solid rgba(255,255,255,0.08); */
+  transition: background 0.4s ease;
+}
+
+/* Brand logo at top-left */
+header .brand {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-image: url('../imgs/HALF-LOGO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+header .brand::after {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.4s ease, left 0.4s ease;
+}
+
+header .brand:hover {
+  width: 200px;
+  border-radius: 50px;
+  background-image: url('../imgs/LOGO.png');
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 70px;
+}
+
+header .brand:hover::after {
+  opacity: 1;
+  left: 90px;
+}
+
+/* Toggle icon top-right */
+#toggleIcon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #f1f1f1;
+  transition: transform 0.4s ease, color 0.3s;
+}
+
+/* #toggleIcon:hover {
+  color: #ffd369;
+  transform: rotate(180deg);
+} */
+
+/* Section styling */
+.container-fluid {
+  padding: 80px 10%;
+  background-color: #121212;
+}
+
+.container-fluid h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffd369;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-fluid p {
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+  color: #ddd;
+  text-align: justify;
+  font-size: 1.05rem;
+}
+
+/* Call To Action Section */
+.cta-section {
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  padding: 100px 10%;
+  color: #fff;
+}
+
+.cta-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffd369;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  background-color: #ffd369;
+  color: #121212;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(255, 211, 105, 0.3);
+}
+
+.cta-btn:hover {
+  background-color: #ffcc33;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 211, 105, 0.5);
+}

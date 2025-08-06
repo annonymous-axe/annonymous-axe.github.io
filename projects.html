@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Sai</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Reuse Header & Project CSS -->
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/home.css">
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/project.css">
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/carousel-caption.css">
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/count-section.css">
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/services-section.css">
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/overlay-effect.css">
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/footer.css">  
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand"></div>
+    <i id="toggleIcon" class="fa-solid fa-chevron-down"></i>
+  </header>
+
+  <!-- Menu Overlay -->
+  <div id="menuOverlay">
+    <div class="menu-container">
+      <div class="menu-column menu-left">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="menu-column menu-right">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Section -->
+  <section class="project-section container-fluid text-center">
+    <h1 class="mb-3">Our Projects</h1>
+    <p class="section-subtitle mb-4">Design meets purpose — explore our curated portfolio of modern builds.</p>
+
+    <!-- Category Filter Dropdown -->
+    <div class="d-flex justify-content-center mb-5">
+      <select id="categoryFilter" class="form-select category-dropdown">
+        <option value="all">All Categories</option>
+        <option value="bunglow">Bunglow</option>
+        <option value="commercial">Commercial</option>
+        <option value="offices">Offices</option>
+        <!-- <option value="others">Others</option> -->
+      </select>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="row g-4 justify-content-center" id="projectGrid">
+      <div class="col-md-4 col-sm-6 project-card-container bunglow">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/home.png" alt="Project 1">
+          <div class="overlay">
+            <h5>Marwadi Villa</h5>
+            <p>Rajkot</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 project-card-container commercial">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/SRK.jpeg" alt="Project 2">
+          <div class="overlay">
+            <h5>Sanghini Skyteare</h5>
+            <p>Surat</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 project-card-container offices">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/SANGINI.jpg" alt="Project 3">
+          <div class="overlay">
+            <h5>SRK Group Office</h5>
+            <p>Surat</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-md-4 col-sm-6 project-card-container others">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/home.png" alt="Project 4">
+          <div class="overlay">
+            <h5>Custom Design</h5>
+            <p>Other Location</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="col-md-4 col-sm-6 project-card-container bunglow">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/projects/AJAY LAKHWALA BUNGLOW.jpg" alt="Project 4">
+          <div class="overlay">
+            <h5>AJAY LAKHWALA BUNGLOW</h5>
+            <p>Surat</p>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-md-4 col-sm-6 project-card-container bunglow">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/projects/DHOLAKIYA FARM - SURAT - SRK GROUP.jpg" alt="Project 4">
+          <div class="overlay">
+            <h5>DHOLAKIYA FARM</h5>
+            <p>Surat</p>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-md-4 col-sm-6 project-card-container bunglow">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/projects/SOUL BAY - SURAT - GAURANG UPADHYAY.png" alt="Project 4">
+          <div class="overlay">
+            <h5>SOUL BAY</h5>
+            <p>Surat</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 project-card-container commercial">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/projects/SHREEJI HOUSE - SURAT - SHREEJI CORPORATION.jpeg" alt="Project 4">
+          <div class="overlay">
+            <h5>SHREEJI HOUSE</h5>
+            <p>Surat</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 project-card-container commercial">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/projects/SONOROUS - VAPI .jpg" alt="Project 4">
+          <div class="overlay">
+            <h5>SONOROUS</h5>
+            <p>Vapi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 project-card-container commercial">
+        <div class="project-card">
+          <img src="../SAI WEB - Kamlesh/imgs/projects/VIBRANT SITA - INDORE - VIBRANT DEVELOPERS.png" alt="Project 4">
+          <div class="overlay">
+            <h5>VIBRANT SITA</h5>
+            <p>Indore</p>
+          </div>
+        </div>
+      </div>       
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <!-- Social Links -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Pages -->
+      <div class="footer-column">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>+91 9426 664 613</p>
+        <p>+91 9913 144 500</p>
+        <p>Admin@sai-consultants.com</p>
+        <p>kush.shah@sai-consultants.com</p>
+        <p>20- Ishwarkunj Society, Opp. SMC Sports Complex,<br>
+          Anandmahal road, Adajan, Surat - 395009</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2025 All rights reserved.</p>
+    </div>
+  </footer>  
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../SAI WEB - Kamlesh/js/home.js"></script>
+  <script src="../SAI WEB - Kamlesh/js/project.js"></script>
+
+</body>
+</html>

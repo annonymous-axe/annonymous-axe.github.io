@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Details | Sai</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Reuse Header & Project CSS -->
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/home.css">
+  <link rel="stylesheet" href="../SAI WEB - Kamlesh/css/project.css">
+
+  <style>
+    /* Extra styles for single project page */
+    .project-hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .project-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .project-content {
+      margin-top: 2rem;
+    }
+    .project-meta {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 1.5rem;
+    }
+    .project-meta span {
+      margin-right: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reuse header -->
+  <header>
+    <div class="brand"></div>
+    <i id="toggleIcon" class="fa-solid fa-chevron-down"></i>
+  </header>
+
+  <div id="menuOverlay">
+    <div class="menu-container">
+      <!-- Left Column -->
+      <div class="menu-column menu-left">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Right Column -->
+      <div class="menu-column menu-right">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single Project Content -->
+  <section class="container project-section py-5">
+    
+    <!-- Project Hero Image -->
+    <div class="project-hero mb-4">
+      <img src="../SAI WEB - Kamlesh/images/sample-project.jpg" alt="Project Title">
+    </div>
+
+    <!-- Project Info -->
+    <div class="project-content">
+      <h1 class="mb-3">Modern Residential Villa</h1>
+      
+      <div class="project-meta">
+        <span><i class="fa-solid fa-calendar"></i> Feb 2025</span>
+        <span><i class="fa-solid fa-user"></i> Client: John Doe</span>
+        <span><i class="fa-solid fa-tag"></i> Category: Architecture</span>
+      </div>
+
+      <p class="text-muted mb-4">
+        This project is a modern residential villa located in the heart of Surat, blending contemporary design with comfort. 
+        The structure emphasizes open spaces, natural lighting, and a seamless indoor-outdoor connection. 
+        Our team handled end-to-end design and construction with sustainable materials and innovative methods.
+      </p>
+
+      <p class="text-muted mb-5">
+        Key highlights include a rooftop garden, modular kitchen, smart lighting system, and a home automation setup. 
+        Our approach ensures the project not only looks modern but is also eco-friendly and energy-efficient.
+      </p>
+
+      <!-- Optional Gallery -->
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="../SAI WEB - Kamlesh/images/sample-1.jpg" class="img-fluid rounded" alt="Gallery 1">
+        </div>
+        <div class="col-md-4">
+          <img src="../SAI WEB - Kamlesh/images/sample-2.jpg" class="img-fluid rounded" alt="Gallery 2">
+        </div>
+        <div class="col-md-4">
+          <img src="../SAI WEB - Kamlesh/images/sample-3.jpg" class="img-fluid rounded" alt="Gallery 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../SAI WEB - Kamlesh/js/home.js"></script>
+</body>
+</html>
